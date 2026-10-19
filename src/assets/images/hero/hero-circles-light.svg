@@ -1,0 +1,7 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="420" height="420" viewBox="0 0 420 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="hero-3d-slot">
+<path id="Ellipse" opacity="0.45" d="M419.375 210C419.375 325.635 325.635 419.375 210 419.375C94.3654 419.375 0.625 325.635 0.625 210C0.625 94.3654 94.3654 0.625 210 0.625C325.635 0.625 419.375 94.3654 419.375 210Z" stroke-width="1.25" stroke="#16161A"/>
+<path id="Ellipse_2" d="M343.5 210C343.5 283.73 283.73 343.5 210 343.5C136.27 343.5 76.5 283.73 76.5 210C76.5 136.27 136.27 76.5 210 76.5C283.73 76.5 343.5 136.27 343.5 210Z" stroke="#E3E1DA"/>
+<circle id="Ellipse_3" cx="210" cy="210" r="66" fill="#16161A"/>
+</g>
+</svg>

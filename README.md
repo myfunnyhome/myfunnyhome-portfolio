@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# myfunnyhome-portfolio
 
-## Getting Started
+박지선(Lucy Park)의 개인 포트폴리오 사이트입니다.
+Shopify 기반 E-commerce 개발 경력과 풀스택 프로젝트를 한 페이지로 소개합니다.
 
-First, run the development server:
+## 주요 기능
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- Hero, Brands, About, Experience, Projects, Skills로 구성된 반응형 싱글 페이지 (모바일 375px ~ 데스크톱 1440px 기준)
+- 다크 / 라이트 테마 전환 (기본값은 시스템 설정, 선택한 테마는 새로고침 후에도 유지)
+- 헤더 메뉴에서 각 섹션으로 이동 (모바일에서는 메뉴 숨김)
+- 오류 페이지(`error.js`)와 404 페이지(`not-found.js`)
+
+프로젝트 스크린샷은 아직 준비 중이며, 현재는 빈 이미지 영역으로 표시됩니다.
+
+## 기술 스택
+
+- Next.js 16 (App Router), React 19, JavaScript (JSX)
+- Tailwind CSS v4
+- next-themes (테마 전환)
+- clsx + tailwind-merge (`cn()`), class-variance-authority (Badge 변형)
+- React Compiler
+- ESLint
+
+## 폴더 구조
+
+```
+src/
+├── app/          # layout, page, error, not-found, providers, globals.css
+├── assets/       # 아이콘, Hero 그래픽 등 SVG 에셋
+├── components/   # 공통 UI 컴포넌트
+├── data/         # 경력, 프로젝트, 기술 스택 등 정적 데이터
+├── lib/          # 공통 유틸리티
+└── sections/     # 페이지 섹션 컴포넌트
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 로컬 실행
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Node.js 20.9 이상이 필요합니다.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm install
+npm run dev
+```
 
-## Learn More
+브라우저에서 [http://localhost:3000](http://localhost:3000)을 엽니다.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm run lint    # ESLint 검사
+npm run build   # 프로덕션 빌드
+npm run start   # 빌드 결과 실행
+```
