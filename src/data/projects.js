@@ -7,8 +7,6 @@ import snackImage from "@/assets/images/projects/snack.png";
 import studyDark from "@/assets/images/projects/study-dark.png";
 import studyLight from "@/assets/images/projects/study-light.png";
 
-// image: 팀/개인 프로젝트에서만 사용. 없으면 카드에 "스크린샷" placeholder 표시
-// srcDark가 있으면 src는 라이트, srcDark는 다크 테마에서 표시
 export const projectGroups = [
   {
     id: "team",

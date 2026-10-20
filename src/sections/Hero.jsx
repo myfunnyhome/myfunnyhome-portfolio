@@ -8,14 +8,14 @@ export default function Hero() {
   return (
     <section className="page-container flex flex-col items-start gap-10 pt-6 pb-16 lg:flex-row lg:items-end lg:gap-16 lg:pt-16 lg:pb-28">
       <div className="min-w-0 flex-1">
-        <h1 className="text-[clamp(52px,7.8vw,112px)] font-bold leading-[1.12] tracking-[-0.03em]">
+        <h1 className="text-5xl font-bold leading-tight tracking-tight md:text-7xl lg:text-8xl">
           박 지선
         </h1>
-        <p className="mt-3 font-archivo text-[26px] font-medium leading-[1.2] text-ash">
+        <p className="mt-3 font-archivo text-[26px] font-medium leading-tight text-ash">
           Lucy Park
         </p>
 
-        <p className="flex flex-wrap items-center gap-x-2.5 gap-y-1.5 pt-7 font-archivo text-lg leading-[1.2] md:text-xl">
+        <p className="flex flex-wrap items-center gap-x-2.5 gap-y-1.5 pt-7 font-archivo text-lg leading-tight md:text-xl">
           <span
             aria-hidden="true"
             className="size-2.25 shrink-0 rounded-full bg-accent"

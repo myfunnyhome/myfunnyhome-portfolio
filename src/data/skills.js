@@ -9,7 +9,6 @@ import prismaIcon from "@/assets/icons/skills/Prisma.svg";
 import shopifyIcon from "@/assets/icons/skills/Shopify.svg";
 import gitIcon from "@/assets/icons/skills/Git.svg";
 import githubActionsIcon from "@/assets/icons/skills/GitHubActions.svg";
-import redisIcon from "@/assets/icons/skills/redis.svg";
 
 export const skills = [
   { id: "javascript", name: "JavaScript", icon: javascriptIcon },
@@ -20,7 +19,6 @@ export const skills = [
   { id: "express", name: "Express", icon: expressIcon },
   { id: "postgresql", name: "PostgreSQL", icon: postgresIcon },
   { id: "prisma", name: "Prisma", icon: prismaIcon },
-  { id: "redis", name: "Redis", icon: redisIcon },
   { id: "shopify", name: "Shopify", icon: shopifyIcon },
   { id: "git", name: "Git", icon: gitIcon },
   { id: "github-actions", name: "GitHub Actions", icon: githubActionsIcon },
@@ -32,13 +30,13 @@ export const skillDetails = [
     title: "Shopify",
     paragraphs: [
       "Liquid, 테마 아키텍처, 섹션 스키마, Shopify CLI",
-      "Storefront API, Admin API, GraphQL, React, Polaris, React Router",
+      "Storefront API, Admin API, React, Polaris, React Router",
     ],
   },
   {
     id: "analytics-monitoring",
     title: "분석 및 모니터링",
-    paragraphs: ["GA4, Sentry, Shopify 앱 연동 및 운영 이슈 해결"],
+    paragraphs: ["Shopify 앱 연동 및 운영 이슈 해결"],
   },
   {
     id: "infrastructure-deployment",
@@ -51,12 +49,12 @@ export const skillDetails = [
   {
     id: "database-cache",
     title: "데이터베이스 및 캐시",
-    paragraphs: ["PostgreSQL, Prisma ORM, Redis"],
+    paragraphs: ["PostgreSQL, Prisma ORM"],
   },
   {
     id: "testing",
     title: "테스트",
-    paragraphs: ["Jest, Playwright"],
+    paragraphs: ["Jest"],
   },
   {
     id: "collaboration",

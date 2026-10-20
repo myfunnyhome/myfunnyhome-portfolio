@@ -1,18 +1,32 @@
 import * as motion from "motion/react-client";
 import SectionHeading from "@/components/SectionHeading";
 import { experiences } from "@/data/experiences";
-import { fadeUp, inView } from "@/lib/motion";
+import { revealEase, revealViewport } from "@/lib/motion";
 
 export default function Experience() {
   return (
     <section id="experience" aria-labelledby="experience-heading" className="page-container py-14 md:py-24">
       <SectionHeading id="experience-heading">Experience</SectionHeading>
 
-      <motion.ul {...inView}>
+      <motion.ul
+        whileInView="visible"
+        viewport={revealViewport}
+      >
         {experiences.map(({ company, role, period, duration, tasks, clients, link }, index) => (
           <motion.li
             key={company}
-            {...fadeUp(index * 0.1)}
+            data-reveal="up"
+            variants={{
+              visible: {
+                opacity: 1,
+                translate: "0px 0px",
+                transition: {
+                  duration: 0.5,
+                  ease: revealEase,
+                  delay: index * 0.1,
+                },
+              },
+            }}
             className="flex flex-col gap-4 border-b border-rule py-11 md:flex-row md:gap-14"
           >
             <p className="shrink-0 font-archivo text-[15px] font-medium leading-[1.4] text-ash md:w-full md:max-w-47.5">

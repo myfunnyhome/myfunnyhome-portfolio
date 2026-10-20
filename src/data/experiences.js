@@ -21,7 +21,7 @@ export const experiences = [
     tasks: [
       "Liquid 기반 테마 커스터마이징 및 신규 구축",
       "스토어프론트 UI 구현, 섹션 구조 수정, 반응형 개선",
-      "Shopify App 개발 참여 - CNXK-SSO (SSO, 소셜 로그인) 화면 구현 담당, React Router, GraphQL 환경",
+      "Shopify App 개발 참여 - CNXK-SSO (SSO, 소셜 로그인) 화면 구현 담당, React Router 환경",
       "GA4 이벤트 추적 설정 및 기본 데이터 분석",
       "Shopify Admin, Storefront API 구조 이해 및 적용",
     ],

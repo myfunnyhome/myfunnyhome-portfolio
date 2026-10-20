@@ -1,6 +1,6 @@
 import * as motion from "motion/react-client";
 import SectionHeading from "@/components/SectionHeading";
-import { fadeUp, inView } from "@/lib/motion";
+import { revealEase, revealViewport } from "@/lib/motion";
 
 export default function About() {
   return (
@@ -11,8 +11,16 @@ export default function About() {
     >
       <SectionHeading id="about-heading">About</SectionHeading>
       <motion.div
-        {...inView}
-        {...fadeUp()}
+        data-reveal="up"
+        whileInView="visible"
+        viewport={revealViewport}
+        variants={{
+          visible: {
+            opacity: 1,
+            translate: "0px 0px",
+            transition: { duration: 0.5, ease: revealEase },
+          },
+        }}
         className="mt-10 flex max-w-225 flex-col gap-6 text-lg leading-[1.8]"
       >
         <p>

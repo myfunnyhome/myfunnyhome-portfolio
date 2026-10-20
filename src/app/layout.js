@@ -34,13 +34,6 @@ export default function RootLayout({ children }) {
       className={`${plexSansKr.variable} ${archivo.variable} h-full scroll-smooth antialiased motion-reduce:scroll-auto`}
       suppressHydrationWarning
     >
-      <head>
-        <noscript>
-          <style>
-            {"[data-reveal]{opacity:1!important;transform:none!important}"}
-          </style>
-        </noscript>
-      </head>
       <body className="min-h-full flex flex-col font-sans">
         <ThemeProvider
           attribute="class"

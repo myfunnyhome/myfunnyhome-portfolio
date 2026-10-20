@@ -51,11 +51,12 @@ body {
   color: var(--text-ink);
 }
 
-/* 동작 줄이기 설정 시 등장 애니메이션 생략: !important는 inline style과 진행 중인 애니메이션보다 우선 */
-@media (prefers-reduced-motion: reduce) {
+@media (scripting: enabled) and (prefers-reduced-motion: no-preference) {
   [data-reveal] {
-    opacity: 1 !important;
-    transform: none !important;
+    opacity: 0;
+  }
+  [data-reveal="up"] {
+    translate: 0 16px;
   }
 }
 
